@@ -60,7 +60,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
         e.toString(),
       );
     }
-    setState(() {
+    setState(() { //setstate
       isLoading = false;
     });
   }
