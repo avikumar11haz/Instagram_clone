@@ -33,7 +33,7 @@ class _SearchScreenState extends State<SearchScreen> {
           ),
         ),
       ),
-      body: isShowUsers
+      body: isShowUsers //users
           ? FutureBuilder(
               future: FirebaseFirestore.instance
                   .collection('users')

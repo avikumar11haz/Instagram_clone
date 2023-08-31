@@ -103,9 +103,9 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceEvenly,
                                   children: [
-                                    buildStatColumn(postLen, "posts"),
-                                    buildStatColumn(followers, "followers"),
-                                    buildStatColumn(following, "following"),
+                                    buildStatColumn(postLen, "posts"), //posts
+                                    buildStatColumn(followers, "followers"), // followers
+                                    buildStatColumn(following, "following"), // following
                                   ],
                                 ),
                                 Row(
@@ -115,7 +115,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                     FirebaseAuth.instance.currentUser!.uid ==
                                             widget.uid
                                         ? FollowButton(
-                                            text: 'Sign Out',
+                                            text: 'Sign Out', // sign out
                                             backgroundColor:
                                                 mobileBackgroundColor,
                                             textColor: primaryColor,
@@ -132,7 +132,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                                 );
                                               }
                                             },
-                                          )
+                                          )  // unfollow
                                         : isFollowing
                                             ? FollowButton(
                                                 text: 'Unfollow',

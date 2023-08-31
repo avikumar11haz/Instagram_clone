@@ -40,14 +40,14 @@ class _SignupScreenState extends State<SignupScreen> {
       _isLoading = true;
     });
 
-    // signup user using our authmethodds
+    // signup user using our auth methods
     String res = await AuthMethods().signUpUser(
         email: _emailController.text,
         password: _passwordController.text,
         username: _usernameController.text,
         bio: _bioController.text,
         file: _image!);
-    // if string returned is sucess, user has been created
+    // if string returned is success, user has been created
     if (res == "success") {
       setState(() {
         _isLoading = false;
