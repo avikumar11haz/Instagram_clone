@@ -49,7 +49,7 @@ class _AddPostScreenState extends State<AddPostScreen> {
                 }),
             SimpleDialogOption(
               padding: const EdgeInsets.all(20),
-              child: const Text("Cancel"),
+              child: const Text("Cancel"),  //cancel
               onPressed: () {
                 Navigator.pop(context);
               },
